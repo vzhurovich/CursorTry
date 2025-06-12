@@ -16,8 +16,10 @@
         btn.addEventListener('click', function() {
             if (btn.textContent === 'Press Me') {
                 btn.textContent = 'Good, Press Again';
+                document.body.style.backgroundColor = 'white';
             } else {
                 btn.textContent = 'Press Me';
+                document.body.style.backgroundColor = 'yellow';
             }
         });
     </script>
