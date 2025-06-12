@@ -3,10 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CursorTry</title>
+    <title>Hello World</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Hello, CursorTry!</h1>
+    <div class="center-content">
+        <h1>Hello, World!</h1>
+        <button id="toggleBtn">Press Me</button>
+    </div>
+    <script>
+        const btn = document.getElementById('toggleBtn');
+        btn.addEventListener('click', function() {
+            if (btn.textContent === 'Press Me') {
+                btn.textContent = 'Good, Press Again';
+            } else {
+                btn.textContent = 'Press Me';
+            }
+        });
+    </script>
 </body>
-</html>
+</html> 
